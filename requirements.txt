@@ -1,0 +1,10 @@
+torch>=2.0.0
+torchvision>=0.15.0
+open_clip_torch>=2.24.0
+faiss-cpu>=1.8.0
+opencv-python
+pillow
+numpy
+pandas
+scikit-learn
+tqdm
