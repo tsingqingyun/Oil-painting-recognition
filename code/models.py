@@ -1,6 +1,10 @@
 import torch
 import open_clip
 from PIL import Image
+# models.py
+import torch
+import open_clip
+from PIL import Image
 
 class ClipEmbedder:
     def __init__(self, model_name="ViT-H-14", pretrained="laion2b_s32b_b79k", device=None):
@@ -16,4 +20,4 @@ class ClipEmbedder:
         imgs = torch.stack([self.preprocess(im) for im in pil_imgs]).to(self.device)
         feats = self.model.encode_image(imgs)
         feats = feats / feats.norm(dim=-1, keepdim=True)
-        return feats.cpu().numpy()
+        return feats.detach().float().cpu().numpy()  # 明确返回 float32
