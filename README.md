@@ -1,7 +1,4 @@
 # Oil-painting-recognition
-
-好的 👍 我根据你现在的代码结构（已经接入了 **完整 OpenCV 流程 → `preprocess_full_for_clip`**），帮你写一份使用流程的 Markdown 文档，涵盖环境准备、数据准备、建库、检索、微调等步骤。你可以直接放到项目根目录作为 `README.md`。
-
 ---
 
 # 油画图像识别与检索流程
